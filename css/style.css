@@ -1,0 +1,394 @@
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../fonts/Roboto-Light.eot');
+	src: url('../fonts/Roboto-Light.eot') format('embedded-opentype'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.eot') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+html, body {
+	height: 100%;
+}
+.bc_log {
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	background-image: url(../images/Bg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.log_bx {
+	width: 360px;
+	height: auto;
+	min-height: 200px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+.lg_ax {
+	width: 220px;
+	height: auto;
+	display: inline-block;
+	margin-top: 200px;
+}
+.lg_ax img {
+	width: 100%;
+	height: auto;
+}
+.log_in {
+	color: #576591;
+	font-size: 22px;
+	margin-bottom: 20px;
+	font-family: 'Roboto-Light';
+	margin-top: -10px;
+}
+.lg_form input[type="text"], .lg_form input[type="date"], .lg_form input[type="datetime"], .lg_form input[type="email"], .lg_form input[type="number"], .lg_form input[type="search"], .lg_form input[type="time"], .lg_form input[type="url"], .lg_form textarea, .lg_form select,.lg_form input[type="password"] {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #2c3553;
+	margin-bottom: 5px;
+	border: 1px solid #2c3553;
+	padding: 3%;
+	color: #576591;
+	border-radius: 5px;
+	height: 55px;
+	font-family: 'Roboto-Light';
+}
+.lg_form input[type="text"]:focus, .lg_form input[type="date"]:focus, .lg_form input[type="datetime"]:focus, .lg_form input[type="email"]:focus, .lg_form input[type="number"]:focus, .lg_form input[type="search"]:focus, .lg_form input[type="time"]:focus, .lg_form input[type="url"]:focus, .lg_form textarea:focus, .lg_form select:focus,.lg_form input[type="password"]:focus {
+	box-shadow: 0 0 5px #576591;
+	padding: 3%;
+	border: 1px solid #576591;
+}
+.lg_form input[type="submit"], .lg_form input[type="button"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #2598cf;
+	color: #fff;
+	border-radius: 5px;
+	height: 55px;
+	font-family: 'Roboto-Regular';
+	border: 0;
+	outline: none;
+	transition: all 0.5s;
+	margin-top: 8px;
+	font-size: 17px;
+}
+.lg_form input[type="submit"]:hover, .lg_form input[type="button"]:hover {
+	background: #45c1fd;
+}
+.lg_form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ color: #576591;
+}
+.lg_form ::-moz-placeholder { /* Firefox 19+ */
+ color: #576591;
+}
+.lg_form :-ms-input-placeholder { /* IE 10+ */
+ color: #576591;
+}
+.lg_form :-moz-placeholder { /* Firefox 18- */
+ color: #576591;
+}
+.fg_pa {
+	font-family: 'Roboto-Light';
+	color: #9a9ead;
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 16px;
+	transition: all 0.5s;
+}
+.fg_pa:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.fg_pao {
+	font-family: 'Roboto-Regular';
+	color: #576591;
+	font-size: 11px;
+	transition: all 0.5s;
+}
+.fg_pao:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/* Main content */
+.main {
+	margin-left: 250px; /* Same as the width of the sidenav */
+	font-size: 15px; /* Increased text to enable scrolling */
+	padding: 100px 25px 0;
+	color: #576591;
+	font-family: 'Roboto-Regular';
+	transition: all 0.5s;
+}
+.main.current {
+	margin-left: 0;
+}
+/* Add an active class to the active dropdown button */
+.dropdown-btn.active {
+	background-color: #1f253a;
+	color: white;
+	outline: none;
+}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: #1f253a;
+	padding-left: 8px;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+	float: right;
+	padding-right: 8px;
+}
+header {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: #252d47;
+	z-index: 100;
+}
+.tg_menu {
+	display: inline-block;
+	cursor: pointer;
+	float: left;
+	margin-left: 60px;
+	margin-top: 30px;
+	transition: all 0.5s;
+}
+.tg_menu:hover {
+	opacity: 0.7;
+}
+.inner_sd {
+	width: 100%;
+	display: block;
+}
+.logo img {
+	width: 100%;
+	height: auto;
+}
+.logo {
+	width: 200px;
+	height: auto;
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.bg_area {
+	background-color: #192039;
+}
+.inner_sd h1 {
+	width: 100%;
+	padding-left: 40px;
+	margin-top: 40px;
+	color: #576591;
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+a.up_floor {
+	position: relative;
+}
+a.up_floor::after {
+	content: "";
+	position: absolute;
+	background-image: url(../images/Upload.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+	top: 15px;
+	right: 22px;
+	width: 20px;
+	height: 20px;
+}
+.txt_ar {
+	width: 200px;
+	float: left;
+}
+.txt_ar input[type="text"] {
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #252d47;
+	margin-bottom: 5px;
+	margin-top: 28px;
+	margin-left: 30px;
+	border: 0;
+	padding: 3%;
+	padding-left: 30px;
+	color: #576591;
+	height: 34px;
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.txt_ar ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ color: #576591;
+}
+.txt_ar ::-moz-placeholder { /* Firefox 19+ */
+ color: #576591;
+}
+.txt_ar :-ms-input-placeholder { /* IE 10+ */
+ color: #576591;
+}
+.txt_ar :-moz-placeholder { /* Firefox 18- */
+ color: #576591;
+}
+.icon_sec {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+}
+.icon_sec li {
+	float: left;
+	margin: 25px 10px 0;
+	transition: all 0.5s;
+}
+.icon_sec li:hover {
+	opacity: 0.6;
+}
+.icon_sec li img {
+	width: 80%;
+	height: auto;
+}
+.ax_no {
+	display: none;
+	clear: both;
+}
+.main h2 {
+	color: #576591;
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+}
+.main h6 {
+	color: #576591;
+	font-family: 'Roboto-Regular';
+	font-size: 13px;
+	width: 100%;
+	border-bottom: 1px solid #252e4b;
+	padding-bottom: 10px;
+}
+.map_bx {
+	width: 100%;
+	height: auto;
+	background-color: #e9eef1;
+	border-radius: 4px;
+	margin-top: 20px;
+	padding: 10px;
+	text-align: center;
+}
+.map_bx img{
+width: 100%;
+max-width:1000px; 	
+height: auto;	
+}
+.main h3 {
+	color: #576591;
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	width: 100%;
+	border-bottom: 1px solid #252e4b;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+table {
+	border: 0;
+	border-collapse: collapse;
+	margin: 15px 0 30px;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+	font-family: 'Roboto-Regular';
+}
+table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+}
+table tr {
+	background-color: #252d47;
+	border: 1px solid #49557c;
+	padding: .35em;
+	border-left: 0;
+	border-right: 0;
+}
+table tr:first-child {
+	border-top: 0;
+}
+table tr:last-child {
+	border-bottom: 0;
+}
+table th, table td {
+	padding: .625em;
+	text-align: center;
+}
+table th {
+	font-size: 14px;
+	letter-spacing: .1em;
+	background-color: #2d3759;
+	line-height: 25px;
+	color: #576591;
+}
+table th:first-child {
+	border-top-left-radius: 5px;
+}
+table th:last-child {
+	border-top-right-radius: 5px;
+}
+table a {
+	color: #29b6f6;
+	font-size: 13px;
+}
+table a:hover {
+	text-decoration: none;
+	color: #29b6f6;
+}
+table td {
+	color: #58617c;
+	font-size: 12px;
+	line-height: 23px;
+}
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 5px;
+}
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 5px;
+}
+table td span {
+	color: #FFFFFF;
+	padding: 3px 5px;
+	background-color: #11ab18;
+	border-radius: 3px;
+}
+.content_left {
+	width: 250px;
+	float: left;
+	position: fixed;
+	height: 100%;
+	background-color: #252d47;
+	overflow: hidden;
+	overflow-y: auto;
+	padding-top: 110px;
+	transition: all 0.5s;
+}
+.content_left.current {
+	width: 0;
+}

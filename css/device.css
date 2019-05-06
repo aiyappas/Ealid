@@ -1,0 +1,168 @@
+
+@media screen and (min-width: 991px) {
+.inner_sd {
+	display: block;
+}
+.inner_sd.current {
+	display: none;
+}
+}
+
+@media screen and (max-width: 991px) {
+.bc_log {
+	min-height: 500px;
+}
+.lg_ax {
+	margin-top: 100px;
+}
+.sidenav {
+	height: 0;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 30px;
+}
+.main {
+	margin-left: 0;
+	padding-top: 150px;
+}
+.sidenav.current {
+	height: auto;
+	width: 100%;
+}
+.txt_ar {
+	width: 150px;
+	float: left;
+	margin-left: 20px;
+}
+.txt_ar input[type="text"] {
+	outline: none;
+	width: 100%;
+	background: #252d47;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-left: 0;
+	border: 0;
+	padding: 3%;
+	padding-left: 30px;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.icon_sec {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+}
+.icon_sec li {
+	float: left;
+	margin: 0px 2px 0;
+	transition: all 0.5s;
+}
+header {
+	position: absolute;
+	width: 100%;
+	height: 125px;
+	background-color: #252d47;
+	z-index: 100;
+}
+.tg_menu {
+	float: right;
+	margin-right: 40px;
+	margin-top: 30px;
+	margin-left: 0;
+}
+.ax_no {
+	display: block;
+}
+.content_left {
+	width: 0;
+	position: absolute;
+	height: auto;
+	padding-top: 135px;
+}
+.content_left.current {
+	width: 100%;
+	position: absolute;
+	height: auto;
+}
+}
+
+@media screen and (max-width: 1190px) {
+table {
+	border: 0;
+}
+table caption {
+	font-size: 1.3em;
+}
+table thead {
+	border: none;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+table tr {
+	border-bottom: 1px solid #49557c;
+	display: block;
+	margin-bottom: .625em;
+}
+table td {
+	border-bottom: 1px solid #49557c;
+	display: block;
+	font-size: .8em;
+	text-align: right;
+}
+table td::before {
+	/*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+	content: attr(data-label);
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+table td:last-child {
+	border-bottom: 0;
+}
+table th:first-child {
+	border-top-left-radius: 0px;
+}
+table th:last-child {
+	border-top-right-radius: 0px;
+}
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 0px;
+}
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 0px;
+}
+table tr {
+	border: 0;
+}
+}
+
+@media screen and (max-width: 390px) {
+.log_bx {
+	width: 100%;
+	padding: 0 15px;
+}
+.icon_sec li {
+	float: left;
+	margin: 0px -4px 0;
+	transition: all 0.5s;
+}
+.icon_sec li img {
+	width: 70%;
+	height: auto;
+}
+.logo {
+	width: 180px;
+}
+}
